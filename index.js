@@ -20,9 +20,9 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   family: 4,
-  connectionTimeout: 10000,
-  greetingTimeout: 10000,
-  socketTimeout: 10000,
+  connectionTimeout: 15000,
+  greetingTimeout: 15000,
+  socketTimeout: 60000,
   auth: {
     user: CONFIG.senderEmail,
     pass: CONFIG.senderPassword,
